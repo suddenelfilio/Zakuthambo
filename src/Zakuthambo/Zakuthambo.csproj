@@ -3,10 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <Description>Register services using assembly scanning and a Catalog.</Description>
+    <Description>Zakuthambo is a Repository pattern library for Microsoft Azure Cosmos DB.</Description>
     <VersionPrefix>1.0.0</VersionPrefix>
     <Authors>Filip Stas</Authors>
-    <PackageTags>Dependency;Injection;DI;Scanning;Conventions;Decoration</PackageTags>
+    <PackageTags>Cosmosdb;Repository</PackageTags>
     <PackageProjectUrl>https://github.com/suddenelfilio/Zakuthambo</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/suddenelfilio/Zakuthambo/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
