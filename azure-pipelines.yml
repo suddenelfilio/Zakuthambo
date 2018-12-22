@@ -1,0 +1,51 @@
+resources:
+- repo: self
+queue:
+  name: Hosted VS2017
+  demands: vstest
+
+steps:
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet restore'
+  inputs:
+    command: restore
+
+    projects: '**/*.csproj'
+
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet build'
+  inputs:
+    projects: '**/*.csproj'
+
+
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet pack'
+  inputs:
+    command: pack
+
+    packagesToPack: src/Zakuthambo/Zakuthambo.csproj
+
+
+- task: VSTest@2
+  displayName: 'VsTest - testAssemblies'
+  inputs:
+    testAssemblyVer2: |
+     **\*Tests.dll
+     !**\*TestAdapter.dll
+     !**\obj\**
+
+    runInParallel: true
+
+    runTestsInIsolation: false
+
+    codeCoverageEnabled: true
+
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: Zakuthambo-nuget'
+  inputs:
+    ArtifactName: 'Zakuthambo-nuget'
+
+
+
