@@ -1,4 +1,4 @@
-# Zakuthambo
+# Zakuthambo ![Build Status](https://visuasoft.visualstudio.com/Zakuthambo/_apis/build/status/suddenelfilio.Zakuthambo?branchName=master)
 
 > Zakuthambo - Chichewa for Cosmos
 
@@ -10,7 +10,7 @@ It uses the [version 3.0+](https://www.nuget.org/packages/Microsoft.Azure.Cosmos
 
 ## Installation
 
-Install the [Zakuthambo NuGet Package]()
+Install the [Zakuthambo NuGet Package](https://www.nuget.org/packages/Zakuthambo) ![Nuget](https://visuasoft.vsrm.visualstudio.com/_apis/public/Release/badge/766251fc-2dd5-496b-8f24-87a9843f9118/1/1)
 ### Package Manager Console
 ```
 Install-Package Zakuthambo
