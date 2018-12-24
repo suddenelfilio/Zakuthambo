@@ -38,6 +38,7 @@ namespace Zakuthambo
             ValidateOptions();
             _client = client;
             ContainerName = container;
+            PartitionPath = partitionPath;
         }
 
         public async Task EnsureContainer(int? throughput = null, CosmosRequestOptions requestOptions = null, CancellationToken cancellationToken = default(CancellationToken))
