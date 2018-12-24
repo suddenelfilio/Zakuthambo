@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <Description>Zakuthambo is a Repository pattern library for Microsoft Azure Cosmos DB.</Description>
-    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionPrefix>1.0.1</VersionPrefix>
     <Authors>Filip Stas</Authors>
     <PackageTags>Cosmosdb;Repository</PackageTags>
     <PackageProjectUrl>https://github.com/suddenelfilio/Zakuthambo</PackageProjectUrl>
