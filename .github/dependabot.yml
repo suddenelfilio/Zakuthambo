@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/src/Zakuthambo"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: Microsoft.Azure.Cosmos
+    versions:
+    - 3.16.0
+    - 3.17.0
+    - 3.17.1
